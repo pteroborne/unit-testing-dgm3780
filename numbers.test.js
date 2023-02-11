@@ -20,8 +20,13 @@ describe("#sumArray", () => {
         expect(sumArray(numbers)).toEqual(0);
     });
 
+    // RIP floating points. Added in tolerances
     it("should return the sum of all decimal numbers in the array", () => {
         const numbers = [0.1, 0.2, 0.3];
-        expect(sumArray(numbers)).toEqual(0.6);
+        const expected = 0.6;
+        const tolerance = 0.0000001;
+        const result = sumArray(numbers);
+        expect(Math.abs(result - expected)).toBeLessThan(tolerance);
     });
+
 });
