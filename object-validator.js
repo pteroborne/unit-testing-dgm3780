@@ -1,3 +1,3 @@
-export function validateKey() {
-
+export function validateKey(obj, key) {
+    return obj.hasOwnProperty(key);
 }
