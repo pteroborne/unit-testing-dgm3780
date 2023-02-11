@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Unit-Testing
 
 For this assignment, we will be learning about Test Drivin Development (TDD). When writing Javascript in larger applications, sometimes introducing new features and code can create unintended side effects. Writing tests for your code can help you write code that doesn't have bugs and free from unintentional side effects.
@@ -33,3 +34,6 @@ For each of the following items:
 - When writing tests, try to think of edge cases for your functions and test for those cases as well as expected behavior.
 - Tests can be written using a framework (Jest recommended) or with vanilla JS.
 - Functions and Tests can be written in the same file, or for sanity, you can opt to split them into modules.
+=======
+# unit-testing-dgm3780
+>>>>>>> origin/main
