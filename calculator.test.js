@@ -3,7 +3,7 @@
 // Write 2 more functions for 2 other calculator operations. (X!, X2, ex, ect.)
 
 import {describe, expect, it, test} from "vitest";
-import {add, subtract, multiply, divide} from "./calculator";
+import {add, subtract, multiply, divide, square, factorial} from "./calculator";
 
 describe("#add", () => {
     it("should return the sum of two numbers", () => {
@@ -45,6 +45,25 @@ describe("#square", () => {
 })
 
 describe("#factorial", () => {
+    it("should return the factorial of a positive integer", () => {
+        const num = 5;
+        expect(factorial(num)).toEqual(120);
+    });
+
+    it("should return 1 when the input is 0", () => {
+        const num = 0;
+        expect(factorial(num)).toEqual(1);
+    });
+
+    it("should return NaN when the input is negative", () => {
+        const num = -5;
+        expect(factorial(num)).toEqual(NaN);
+    });
+
+    it("should return NaN when the input is a decimal", () => {
+        const num = 2.5;
+        expect(factorial(num)).toEqual(NaN);
+    });
     it("should return the factorial of a given number", () => {
         const num = Math.floor(Math.abs(Math.random()))
         let factorialResult = 1;
